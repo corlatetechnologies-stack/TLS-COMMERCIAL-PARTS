@@ -1,0 +1,24 @@
+{
+  "name": "tls-commercial-parts",
+  "version": "1.0.0",
+  "description": "A professional website for TLS Commercial Parts - Motor parts dealer and Mercedes-Benz specialists",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "keywords": ["motor-parts", "mercedes-benz", "auto-parts"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.3.2",
+    "vite": "^2.9.18"
+  }
+}
