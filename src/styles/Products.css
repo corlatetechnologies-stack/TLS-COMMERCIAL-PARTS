@@ -1,0 +1,514 @@
+.products {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    animation: slideDown 0.6s ease;
+}
+
+.section-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    letter-spacing: -0.02em;
+}
+
+.section-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Search and Filters */
+.products-controls {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    animation: fadeIn 0.8s ease;
+}
+
+.search-box {
+    position: relative;
+    max-width: 550px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px 45px 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(255, 76, 69, 0.08);
+}
+
+.search-input::placeholder {
+    color: #aaa;
+}
+
+.search-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #ccc;
+    pointer-events: none;
+}
+
+/* Category Filters */
+.category-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 10px 22px;
+    border: 2px solid var(--secondary-color);
+    background: white;
+    color: var(--secondary-color);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(30, 42, 74, 0.2);
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 6px 20px rgba(255, 76, 69, 0.3);
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+    animation: fadeIn 0.8s ease 0.2s both;
+}
+
+.product-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid #f0f0f0;
+    position: relative;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 12px 28px rgba(255, 76, 69, 0.18);
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+}
+
+.product-card:hover::before {
+    opacity: 1;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--secondary-color), #2d3e50);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1) rotate(1deg);
+}
+
+.product-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: white;
+    padding: 7px 16px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(255, 76, 69, 0.3);
+}
+
+.product-badge.refurbished {
+    background: var(--primary-color);
+    opacity: 0.9;
+}
+
+.product-badge.used {
+    background: var(--secondary-color);
+}
+
+.product-content {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.product-category {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 0 16px 0;
+    line-height: 1.6;
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border-top: 2px solid #f0f0f0;
+    padding-top: 15px;
+}
+
+.product-price {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.order-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 18px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.order-btn:hover {
+    background: #e63c34;
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(255, 76, 69, 0.4);
+}
+
+.order-btn:active {
+    transform: scale(0.96);
+}
+
+.order-btn.hovered {
+    background: #e63c34;
+}
+
+.whatsapp-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* No Products Message */
+.no-products {
+    text-align: center;
+    padding: 80px 20px;
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.no-products-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite;
+}
+
+.no-products-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.no-products-hint {
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Products Info */
+.products-info {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+.products-info .highlight {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* CTA Section */
+.products-cta {
+    background: linear-gradient(135deg, var(--secondary-color), #1a2a3a);
+    color: var(--white-color);
+    padding: 50px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(255, 76, 69, 0.2);
+    margin-top: 60px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.products-cta h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.products-cta p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+}
+
+.cta-btn.primary {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.cta-btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 76, 69, 0.4);
+    background: #e63c34;
+}
+
+.cta-btn.secondary {
+    border-color: var(--white-color);
+    color: var(--white-color);
+    background: transparent;
+}
+
+.cta-btn.secondary:hover {
+    background: var(--white-color);
+    color: var(--secondary-color);
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products {
+        padding: 80px 15px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .category-filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .products {
+        padding: 60px 10px;
+    }
+
+    .section-header {
+        margin-top: 60px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-description {
+        font-size: 0.95rem;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-footer {
+        flex-direction: column;
+    }
+
+    .order-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .products-cta {
+        padding: 40px 20px;
+    }
+
+    .products-cta h3 {
+        font-size: 1.3rem;
+    }
+}

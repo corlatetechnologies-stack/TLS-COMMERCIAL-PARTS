@@ -20,17 +20,8 @@ const Hero = () => {
         return () => clearInterval(timer);
     }, [slides.length]);
 
-    const scrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            const navbarHeight = 80;
-            const targetPosition = section.offsetTop - navbarHeight;
-            
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
+    const navigateToProducts = () => {
+        window.location.href = '/products';
     };
 
     const nextSlide = () => {
@@ -73,13 +64,13 @@ const Hero = () => {
                 <div className="hero-buttons">
                     <button 
                         className="btn btn-primary"
-                        onClick={() => scrollToSection('products')}
+                        onClick={navigateToProducts}
                     >
                         Browse Parts
                     </button>
                     <button 
                         className="btn btn-secondary"
-                        onClick={() => scrollToSection('contact')}
+                        onClick={() => window.location.href = '#contact'}
                     >
                         Get a Quote
                     </button>
