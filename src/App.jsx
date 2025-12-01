@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+import ProductsPage from './pages/ProductsPage';
 import './styles/App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/products" element={<ProductsPage />} />
                 </Routes>
                 <Footer />
             </div>

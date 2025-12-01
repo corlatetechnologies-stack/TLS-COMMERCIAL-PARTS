@@ -22,13 +22,12 @@ const Navbar = () => {
         if (section) {
             const navbarHeight = 80;
             const targetPosition = section.offsetTop - navbarHeight;
-            
+
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
             });
-            
-            setActiveSection(sectionId);
+
             setIsMobileMenuOpen(false);
         }
     };
@@ -47,15 +46,15 @@ const Navbar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    const isActive = (path) => location.pathname === path;
+
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container">
                 <div className="nav-left">
-                    <div className="logo-image">
-                        <Link to="/">
-                            <img src="/images/logo.png" alt="TLS Commercial Parts Logo" />
-                        </Link>
-                    </div>
+                    <Link to="/" className="logo-image">
+                        <img src="/images/logo.png" alt="TLS Commercial Parts Logo" />
+                    </Link>
                 </div>
                 
                 <div className="nav-right">
@@ -63,7 +62,7 @@ const Navbar = () => {
                         <li>
                             <Link 
                                 to="/" 
-                                className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+                                className={`nav-link ${isActive('/') ? 'active' : ''}`}
                                 onClick={() => {
                                     setIsMobileMenuOpen(false);
                                     setActiveSection('home');
@@ -73,16 +72,13 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <a 
-                                href="#products" 
-                                className={`nav-link ${activeSection === 'products' ? 'active' : ''}`}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    handleHomeNavigation('products');
-                                }}
+                            <Link 
+                                to="/products" 
+                                className={`nav-link ${isActive('/products') ? 'active' : ''}`}
+                                onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Products
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a 
@@ -99,19 +95,31 @@ const Navbar = () => {
                         <li>
                             <Link 
                                 to="/contact" 
-                                className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
-                                onClick={() => {
-                                    setIsMobileMenuOpen(false);
-                                }}
+                                className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
+                                onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Contact
                             </Link>
                         </li>
                     </ul>
-                    
+                    <div className="nav-cta">
+                        <button
+                            className="cta-btn"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection('contact');
+                            }}
+                        >
+                            Request Quote
+                        </button>
+                    </div>
+
                     <div 
                         className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
                         onClick={toggleMobileMenu}
+                        aria-label="Toggle navigation menu"
+                        role="button"
+                        tabIndex={0}
                     >
                         <span className="bar"></span>
                         <span className="bar"></span>
