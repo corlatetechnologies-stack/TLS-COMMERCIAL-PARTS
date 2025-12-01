@@ -10,12 +10,17 @@
     "preview": "vite preview",
     "start": "vite"
   },
-  "keywords": ["motor-parts", "mercedes-benz", "auto-parts"],
+  "keywords": [
+    "motor-parts",
+    "mercedes-benz",
+    "auto-parts"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.3.2",

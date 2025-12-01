@@ -1,0 +1,335 @@
+/* ===== CONTACT PAGE STYLES ===== */
+.contact-page {
+    padding: 6rem 0 4rem 0;
+    background-color: var(--white-color);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ===== PAGE HEADER ===== */
+.contact-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+.contact-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-subtitle {
+    font-size: 1.3rem;
+    color: #6c757d;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.7;
+}
+
+.contact-highlight {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.highlight-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.highlight-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-item span:last-child {
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== CONTACT CONTENT ===== */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* ===== CONTACT FORM SECTION ===== */
+.contact-form-section {
+    background: var(--white-color);
+    padding: 0;
+}
+
+.form-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-description {
+    color: #6c757d;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    color: var(--secondary-color);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 76, 69, 0.1);
+    background-color: var(--white-color);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #6c757d;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.send-message-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+}
+
+.send-message-btn:hover {
+    background-color: #e63c34;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 76, 69, 0.3);
+}
+
+/* ===== CONTACT INFO SECTION ===== */
+.contact-info-section {
+    padding: 0;
+}
+
+.info-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.info-description {
+    color: #6c757d;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* ===== CONTACT DETAILS ===== */
+.contact-details {
+    margin-bottom: 2rem;
+}
+
+.contact-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f3f4;
+}
+
+.contact-detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.detail-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-detail-item span {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+/* ===== MAP CONTAINER ===== */
+.map-container {
+    margin-top: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media screen and (max-width: 768px) {
+    .contact-page {
+        padding: 4rem 0 3rem 0;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .contact-title {
+        font-size: 2.2rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .form-title,
+    .info-title {
+        font-size: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 1rem;
+    }
+
+    .send-message-btn {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .contact-detail-item {
+        padding: 0.8rem 0;
+    }
+
+    .map-placeholder {
+        padding: 2rem 1rem;
+        min-height: 250px;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .contact-content {
+        gap: 2rem;
+    }
+
+    .form-title,
+    .info-title {
+        font-size: 1.3rem;
+    }
+
+    .contact-form {
+        gap: 1.2rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+    }
+
+    .contact-detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+
+    .detail-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .map-placeholder {
+        padding: 1.5rem 1rem;
+        min-height: 200px;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+}
