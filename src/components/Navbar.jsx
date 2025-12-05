@@ -81,16 +81,13 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <a 
-                                href="#about" 
-                                className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    handleHomeNavigation('about');
-                                }}
+                            <Link 
+                                to="/about" 
+                                className={`nav-link ${isActive('/about') ? 'active' : ''}`}
+                                onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 About Us
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <Link 
