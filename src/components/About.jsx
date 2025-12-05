@@ -101,13 +101,40 @@ const About = () => {
                             
                             <ul className="mercedes-expertise-list">
                                 <li className="mercedes-expertise-item">
-                                    🔧 <strong>Differential (Diff) Systems:</strong> Expert diagnosis, repair, and replacement of Mercedes-Benz and Mercedes truck differentials.
+                                    <div className="expertise-header">
+                                        <svg className="expertise-list-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12,3C7.58,3 4,4.79 4,7V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V7C20,4.79 16.42,3 12,3M18,17C18,17.5 15.87,19 12,19C8.13,19 6,17.5 6,17V14.77C7.61,15.55 9.72,16 12,16C14.28,16 16.39,15.55 18,14.77V17M18,12.45C16.7,13.4 14.42,14 12,14C9.58,14 7.3,13.4 6,12.45V9.64C7.47,10.47 9.61,11 12,11C14.39,11 16.53,10.47 18,9.64V12.45M12,9C8.13,9 6,7.5 6,7C6,6.5 8.13,5 12,5C15.87,5 18,6.5 18,7C18,7.5 15.87,9 12,9Z"/>
+                                        </svg>
+                                        <strong>Differential (Diff) Systems:</strong>
+                                    </div>
+                                    <p className="expertise-description">Expert diagnosis, repair, and replacement of Mercedes-Benz and Mercedes truck differentials.</p>
                                 </li>
                                 <li className="mercedes-expertise-item">
-                                    🔧 <strong>Gearboxes:</strong> Comprehensive services for manual and automatic Mercedes-Benz and Mercedes truck gearboxes.
+                                    <div className="expertise-header">
+                                        <svg className="expertise-list-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.22,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.22,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.68 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"/>
+                                        </svg>
+                                        <strong>Gearboxes:</strong>
+                                    </div>
+                                    <p className="expertise-description">Comprehensive services for manual and automatic Mercedes-Benz and Mercedes truck gearboxes.</p>
                                 </li>
                                 <li className="mercedes-expertise-item">
-                                    🔧 <strong>Engines:</strong> From routine maintenance to complex rebuilds, ensuring peak performance for your Mercedes-Benz engine and truck engines.
+                                    <div className="expertise-header">
+                                        <svg className="expertise-list-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21A7,7 0 0,1 14,26H10A7,7 0 0,1 3,19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M12,4A0,0 0 0,1 12,4A0,0 0 0,1 12,4M7.5,13A4.5,4.5 0 0,1 12,17.5A4.5,4.5 0 0,1 16.5,13"/>
+                                        </svg>
+                                        <strong>Engines:</strong>
+                                    </div>
+                                    <p className="expertise-description">From routine maintenance to complex rebuilds, ensuring peak performance for your Mercedes-Benz engine and truck engines.</p>
+                                </li>
+                                <li className="mercedes-expertise-item">
+                                    <div className="expertise-header">
+                                        <svg className="expertise-list-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12,2A1,1 0 0,1 13,3V4.5C15.5,4.94 17.5,6.81 18,9.5H20A1,1 0 0,1 21,10.5V13.5A1,1 0 0,1 20,14.5H18C17.5,17.19 15.5,19.06 13,19.5V21A1,1 0 0,1 12,22A1,1 0 0,1 11,21V19.5C8.5,19.06 6.5,17.19 6,14.5H4A1,1 0 0,1 3,13.5V10.5A1,1 0 0,1 4,9.5H6C6.5,6.81 8.5,4.94 11,4.5V3A1,1 0 0,1 12,2M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
+                                        </svg>
+                                        <strong>Suspension:</strong>
+                                    </div>
+                                    <p className="expertise-description">Complete suspension repair and replacement services to restore your Mercedes-Benz ride quality and handling performance.</p>
                                 </li>
                             </ul>
                             
@@ -118,7 +145,7 @@ const About = () => {
                         
                         <div className="mercedes-logo-container">
                             <img 
-                                src="/images/mercedes-badge.jpg" 
+                                src="/images/m-.bage.jpg" 
                                 alt="Mercedes-Benz logo badge" 
                                 className="mercedes-logo"
                             />
@@ -137,9 +164,9 @@ const About = () => {
                                     <path d="M12,2A2,2 0 0,1 14,4V6A8,8 0 0,1 22,14H23A1,1 0 0,1 24,15V18A1,1 0 0,1 23,19H22A8,8 0 0,1 14,27H10A8,8 0 0,1 2,19H1A1,1 0 0,1 0,18V15A1,1 0 0,1 1,14H2A8,8 0 0,1 10,6V4A2,2 0 0,1 12,2M12,4V6H10A6,6 0 0,0 4,12V17H6V19H4A6,6 0 0,0 10,25H14A6,6 0 0,0 20,19H18V17H20V12A6,6 0 0,0 14,6H12V4M9,11H15L12,18L9,11Z"/>
                                 </svg>
                             </div>
-                            <h3 className="quality-pillar-title">Rigorous Testing</h3>
+                            <h3 className="quality-pillar-title">Tested for Excellence</h3>
                             <p className="quality-pillar-description">
-                                Every second-hand part undergoes stringent quality checks and testing to ensure optimal performance and durability before sale.
+                                Each spare and part is subjected to rigorous inspections and performance tests, guaranteeing durability and confidence in every purchase.
                             </p>
                         </div>
                         
@@ -149,9 +176,9 @@ const About = () => {
                                     <path d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
                                 </svg>
                             </div>
-                            <h3 className="quality-pillar-title">Certified Mechanics</h3>
+                            <h3 className="quality-pillar-title">Highly Skilled Technicians</h3>
                             <p className="quality-pillar-description">
-                                Our team consists of certified and experienced professionals dedicated to delivering the highest standard of repair work.
+                                Our technicians combine extensive experience with a passion for excellence, committed to providing the highest standard of repair work.
                             </p>
                         </div>
                         
@@ -169,26 +196,7 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Team Section */}
-                <div className="team-section">
-                    <h2 className="team-title">Meet Our Expert Team</h2>
-                    
-                    <div className="team-grid">
-                        <div className="team-member">
-                            <div className="team-member-image">
-                                <img 
-                                    src="/images/louis-profile.png" 
-                                    alt="Louis Tole - Founder and Lead Mechanic" 
-                                />
-                            </div>
-                            <h3 className="team-member-name">Louis Tole</h3>
-                            <p className="team-member-title">Founder & Lead Mechanic</p>
-                            <p className="team-member-description">
-                                With decades of experience in Mercedes-Benz mechanics, Louis founded TSL Commercial Parts with a vision to provide exceptional automotive solutions and quality parts to the community.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
 
                 {/* Call to Action */}
                 <div className="about-cta">

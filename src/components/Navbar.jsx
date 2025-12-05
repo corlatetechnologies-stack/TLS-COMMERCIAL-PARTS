@@ -7,6 +7,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
     const location = useLocation();
+    const showQuoteButton = location.pathname === '/products';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -99,17 +100,19 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    <div className="nav-cta">
-                        <button
-                            className="cta-btn"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                scrollToSection('contact');
-                            }}
-                        >
-                            Request Quote
-                        </button>
-                    </div>
+                    {showQuoteButton && (
+                        <div className="nav-cta">
+                            <button
+                                className="cta-btn"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    scrollToSection('contact');
+                                }}
+                            >
+                                Request Quote
+                            </button>
+                        </div>
+                    )}
 
                     <div 
                         className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}

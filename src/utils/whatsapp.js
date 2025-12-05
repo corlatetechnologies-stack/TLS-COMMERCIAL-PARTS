@@ -1,5 +1,5 @@
 // WhatsApp integration utility
-const WHATSAPP_NUMBER = '+27630206053'; // TLS Commercial Parts WhatsApp number
+const WHATSAPP_NUMBER = '+27719794438'; // TLS Commercial Parts WhatsApp number
 
 export const sendWhatsAppOrder = (product) => {
     const message = `Hi! I'm interested in ordering the following product:\n\n*Product:* ${product.name}\n*Category:* ${product.category}\n*Price:* ${product.price}\n*Condition:* ${product.condition}\n\nPlease confirm availability and provide payment details.`;

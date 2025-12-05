@@ -9,9 +9,7 @@ const Services = () => {
                 <div className="section-header">
                     <h2 className="section-title">Our Core Services</h2>
                     <p className="section-description">
-                        At TLS Commercial Parts, we specialize in quality second-hand motor parts and spares, 
-                        plus expert Mercedes Benz repair services. We help you save money while getting reliable 
-                        parts and professional repairs.
+                        At TLS Commercial Parts, we specialize in quality motor parts and spares, plus expert Mercedes-Benz car and truck repair services. We help you save money while getting reliable parts and professional repairs.
                     </p>
                 </div>
 

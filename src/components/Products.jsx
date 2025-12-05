@@ -124,7 +124,7 @@ const Products = () => {
                         <a href="https://wa.me/27630206053" target="_blank" rel="noopener noreferrer" className="cta-btn primary">
                             💬 WhatsApp Us
                         </a>
-                        <a href="tel:+27630206053" className="cta-btn secondary">
+                        <a href="tel:+27719794438" className="cta-btn secondary">
                             📞 Call Us
                         </a>
                     </div>
