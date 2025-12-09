@@ -70,7 +70,7 @@ const Hero = () => {
                     </button>
                     <button 
                         className="btn btn-secondary"
-                        onClick={() => window.location.href = '#contact'}
+                        onClick={() => window.open('https://wa.me/message/HBNN47EW2DUXP1', '_blank')}
                     >
                         Get a Quote
                     </button>

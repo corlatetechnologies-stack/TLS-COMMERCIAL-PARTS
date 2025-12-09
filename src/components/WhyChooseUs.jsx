@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/WhyChooseUs.css';
 
 const WhyChooseUs = () => {
+    const navigate = useNavigate();
+
     return (
         <section id="why-choose-us" className="why-choose-us">
             <div className="container">
@@ -64,8 +67,8 @@ const WhyChooseUs = () => {
                         help. Contact us today!
                     </p>
                     <div className="cta-buttons">
-                        <button className="btn btn-primary cta-btn">Get a Free Consultation</button>
-                        <button className="btn btn-secondary cta-btn">Explore Our Parts</button>
+                        <button className="btn btn-primary cta-btn" onClick={() => window.open('https://wa.me/message/HBNN47EW2DUXP1', '_blank')}>Get a Free Consultation</button>
+                        <button className="btn btn-secondary cta-btn" onClick={() => navigate('/products')}>Explore Our Parts</button>
                     </div>
                 </div>
             </div>

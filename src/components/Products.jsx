@@ -76,18 +76,12 @@ const Products = () => {
                             >
                                 <div className="product-image">
                                     <img src={product.image} alt={product.name} />
-                                    <div className={`product-badge ${product.condition.toLowerCase()}`}>
-                                        {product.condition === 'New' && '✨ New'}
-                                        {product.condition === 'Refurbished' && '🔧 Refurbished'}
-                                        {product.condition === 'Used' && '✓ Used'}
-                                    </div>
                                 </div>
                                 <div className="product-content">
                                     <h3 className="product-name">{product.name}</h3>
                                     <p className="product-category">{product.category}</p>
                                     <p className="product-description">{product.description}</p>
                                     <div className="product-footer">
-                                        <span className="product-price">{product.price}</span>
                                         <button 
                                             className={`order-btn ${hoveredProduct === product.id ? 'hovered' : ''}`}
                                             onClick={() => handleOrderClick(product)}
@@ -121,10 +115,10 @@ const Products = () => {
                     <h3>💬 Can't find what you're looking for?</h3>
                     <p>Our team is ready to help! Chat with us on WhatsApp or give us a call.</p>
                     <div className="cta-buttons">
-                        <a href="https://wa.me/27630206053" target="_blank" rel="noopener noreferrer" className="cta-btn primary">
+                        <a href="https://wa.me/message/HBNN47EW2DUXP1" target="_blank" rel="noopener noreferrer" className="cta-btn primary">
                             💬 WhatsApp Us
                         </a>
-                        <a href="tel:+27719794438" className="cta-btn secondary">
+                        <a href="tel:+27630206053" className="cta-btn secondary">
                             📞 Call Us
                         </a>
                     </div>

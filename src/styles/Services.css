@@ -152,20 +152,47 @@
 }
 
 .expertise-card {
-    background: linear-gradient(135deg, rgba(30, 41, 59, 0.05) 0%, rgba(30, 41, 59, 0.08) 100%);
+    background: white;
     padding: 1.2rem;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(30, 41, 59, 0.15);
-    transition: var(--transition);
-    border: 1px solid rgba(30, 41, 59, 0.15);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid #f0f0f0;
+    position: relative;
 }
+
+.expertise-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px 12px 0 0;
 }
 
 .expertise-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(30, 41, 59, 0.25);
-    background: linear-gradient(135deg, rgba(30, 41, 59, 0.08) 0%, rgba(30, 41, 59, 0.12) 100%);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(255, 76, 69, 0.18);
+    border-color: var(--primary-color);
+}
+
+.expertise-card:hover::before {
+    opacity: 1;
+}
+
+.expertise-card:active::before {
+    opacity: 1;
+}
+
+.expertise-card:active {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(255, 76, 69, 0.18);
+    border-color: var(--primary-color);
 }
 
 .expertise-icon {
@@ -274,14 +301,41 @@
     }
 
     .expertise-section {
-        padding: 2rem 0.5rem;
+        padding: 1.5rem 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .expertise-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .expertise-description {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .expertise-card {
-        padding: 1rem;
+        padding: 1.2rem;
+    }
+
+    .expertise-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.8rem;
     }
 
     .expertise-card-title {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .expertise-card-description {
+        font-size: 0.85rem;
     }
 }

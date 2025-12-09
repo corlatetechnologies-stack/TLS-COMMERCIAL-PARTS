@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Services.css';
 
 const Services = () => {
+    const navigate = useNavigate();
+
     return (
         <section id="services" className="services">
             <div className="container">
@@ -27,7 +30,7 @@ const Services = () => {
                                 for various vehicle makes and models. All parts are carefully checked 
                                 to ensure they work properly, giving you reliable parts at affordable prices.
                             </p>
-                            <button className="service-btn">View Parts Inventory</button>
+                            <button className="service-btn" onClick={() => navigate('/products')}>View Parts Inventory</button>
                         </div>
                     </div>
 

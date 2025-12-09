@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 
 const Footer = () => {
@@ -36,10 +37,10 @@ const Footer = () => {
                     <div className="footer-section">
                         <h3 className="footer-title">Products</h3>
                         <ul className="footer-links">
-                            <li><a href="#products">View All</a></li>
-                            <li><a href="#products">Engines</a></li>
-                            <li><a href="#products">Powerboxes</a></li>
-                            <li><a href="#products">Differentials</a></li>
+                            <li><Link to="/products">View All</Link></li>
+                            <li><Link to="/products">Engines</Link></li>
+                            <li><Link to="/products">Powerboxes</Link></li>
+                            <li><Link to="/products">Differentials</Link></li>
                         </ul>
                     </div>
 
@@ -47,7 +48,7 @@ const Footer = () => {
                     <div className="footer-section">
                         <h3 className="footer-title">Company</h3>
                         <ul className="footer-links">
-                            <li><a href="#about">About Us</a></li>
+                            <li><Link to="/about">About Us</Link></li>
                             <li><a href="#services">Services</a></li>
                         </ul>
                     </div>
@@ -65,7 +66,7 @@ const Footer = () => {
                             <svg className="contact-icon" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                             </svg>
-                            <span>+27 71 979 4438</span>
+                            <span>+27 63 020 6053</span>
                         </div>
                         <div className="contact-item">
                             <svg className="contact-icon" viewBox="0 0 24 24" fill="currentColor">

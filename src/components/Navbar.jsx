@@ -106,7 +106,7 @@ const Navbar = () => {
                                 className="cta-btn"
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    scrollToSection('contact');
+                                    window.open('https://wa.me/message/HBNN47EW2DUXP1', '_blank');
                                 }}
                             >
                                 Request Quote

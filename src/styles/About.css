@@ -192,7 +192,7 @@
 
 .mercedes-expertise-description {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.7;
     color: #6c757d;
     margin-bottom: 2rem;
 }
@@ -230,7 +230,7 @@
 
 .expertise-description {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.7;
     color: #6c757d;
     margin: 0;
     padding-left: 32px;
@@ -238,7 +238,7 @@
 
 .mercedes-expertise-quality {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.7;
     color: #6c757d;
     margin: 0;
 }
@@ -255,10 +255,10 @@
     max-width: 100%;
     width: auto;
     height: auto;
-    max-height: 450px;
+    max-height: 280px;
     object-fit: contain;
     transition: transform 0.3s ease;
-    filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
 }
 
 .mercedes-logo:hover {
