@@ -6,7 +6,9 @@
 
 .container {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .section-header {
@@ -477,6 +479,10 @@
 @media (max-width: 480px) {
     .products {
         padding: 60px 10px;
+    }
+
+    .container {
+        padding: 0 10px;
     }
 
     .section-header {

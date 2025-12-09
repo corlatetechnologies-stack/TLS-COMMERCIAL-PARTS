@@ -8,6 +8,16 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#root {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 :root {
     /* TLS Commercial Parts Color Palette */
     --primary-color: #ff4c45;        /* Warm Red */
