@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Hero.css';
 
 const Hero = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const navigate = useNavigate();
     
     // Images for slideshow 
     const slides = [
@@ -21,7 +23,7 @@ const Hero = () => {
     }, [slides.length]);
 
     const navigateToProducts = () => {
-        window.location.href = '/products';
+        navigate('/products');
     };
 
     const nextSlide = () => {

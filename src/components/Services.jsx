@@ -46,7 +46,7 @@ const Services = () => {
                                 hands-on experience. We've honed our skills on countless engines, gearboxes, 
                                 and differentials, learning what works best to get your Mercedes running perfectly again.
                             </p>
-                            <button className="service-btn">Schedule a Service</button>
+                            <button className="service-btn" onClick={() => navigate('/contact')}>Schedule a Service</button>
                         </div>
                     </div>
                 </div>

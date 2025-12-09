@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/About.css';
 
 const About = () => {
@@ -205,8 +206,8 @@ const About = () => {
                         Whether you need genuine Mercedes-Benz parts or expert repair services, we're here to help you get back on the road with confidence.
                     </p>
                     <div className="cta-buttons">
-                        <a href="/contact" className="btn btn-primary">Get in Touch</a>
-                        <a href="/products" className="btn btn-secondary">Browse Parts</a>
+                        <Link to="/contact" className="btn btn-primary">Get in Touch</Link>
+                        <Link to="/products" className="btn btn-secondary">Browse Parts</Link>
                     </div>
                 </div>
             </div>
