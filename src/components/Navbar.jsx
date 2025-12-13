@@ -53,7 +53,7 @@ const Navbar = () => {
             <div className="navbar-container">
                 <div className="nav-left">
                     <Link to="/" className="logo-image">
-                        <img src="/images/m-.bage.jpg" alt="Mercedes-Benz - TLS Commercial Parts" />
+                        <img src="/images/logo.png" alt="TLS Commercial Parts Logo" />
                     </Link>
                 </div>
                 
