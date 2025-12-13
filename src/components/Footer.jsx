@@ -84,21 +84,14 @@ const Footer = () => {
                             <span>3 Isando Road, Kempton Park</span>
                         </div>
                     </div>
-
-                    {/* Support */}
-                    <div className="footer-section">
-                        <h3 className="footer-title">Support</h3>
-                        <ul className="footer-links">
-                            <li><a href="#faq">FAQ</a></li>
-                            <li><a href="#terms">Terms of Service</a></li>
-                            <li><a href="#privacy">Privacy Policy</a></li>
-                        </ul>
-                    </div>
                 </div>
 
                 {/* Copyright */}
                 <div className="footer-bottom">
                     <p>&copy; 2025 TLS Commercial Parts. All rights reserved.</p>
+                    <p className="developer-credit">
+                        Website by <a href="https://corlate.co.za/" target="_blank" rel="noopener noreferrer">Corlate Technologies</a>
+                    </p>
                 </div>
             </div>
         </footer>

@@ -146,7 +146,7 @@ const About = () => {
                         
                         <div className="mercedes-logo-container">
                             <img 
-                                src="/images/mercedes-badge.jpg" 
+                                src="/images/m-.bage.jpg" 
                                 alt="Mercedes-Benz logo badge" 
                                 className="mercedes-logo"
                             />

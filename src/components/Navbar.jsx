@@ -7,7 +7,6 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
     const location = useLocation();
-    const showQuoteButton = location.pathname === '/products';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -54,7 +53,7 @@ const Navbar = () => {
             <div className="navbar-container">
                 <div className="nav-left">
                     <Link to="/" className="logo-image">
-                        <img src="/images/logo.png" alt="TLS Commercial Parts Logo" />
+                        <img src="/images/m-.bage.jpg" alt="Mercedes-Benz - TLS Commercial Parts" />
                     </Link>
                 </div>
                 
@@ -100,19 +99,6 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    {showQuoteButton && (
-                        <div className="nav-cta">
-                            <button
-                                className="cta-btn"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    window.open('https://wa.me/message/HBNN47EW2DUXP1', '_blank');
-                                }}
-                            >
-                                Request Quote
-                            </button>
-                        </div>
-                    )}
 
                     <div 
                         className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
