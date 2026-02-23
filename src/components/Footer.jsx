@@ -12,7 +12,7 @@ const Footer = () => {
                         <div className="company-info">
                             <h3 className="footer-title">TLS Commercial Parts</h3>
                             <div className="company-description-wrapper">
-                                <img src="/images/logo.png" alt="TLS Commercial Parts Logo" className="company-logo" />
+                                <img src="/images/logo-louis.png" alt="TLS Commercial Parts Logo" className="company-logo" />
                                 <p className="company-description">
                                     Specializing in Mercedes Benz repairs and quality 
                                     second-hand parts.

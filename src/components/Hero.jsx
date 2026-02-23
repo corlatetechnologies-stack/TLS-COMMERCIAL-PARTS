@@ -57,22 +57,24 @@ const Hero = () => {
             {/* Hero Content */}
             <div className="hero-content">
                 <h1 className="hero-title">
-                    Quality Parts<br />
-                    Expert Service
+                    <span itemProp="name">Quality Mercedes-Benz Parts</span><br />
+                    <span>Expert Truck Repair Service</span>
                 </h1>
                 <p className="hero-subtitle">
-                    Expertly inspected, cost-effective secondhand parts and spares, plus specialized Mercedes Benz repair services.
+                    Kempton Park's trusted Mercedes-Benz specialist. Premium second-hand engines, gearboxes, differentials & expert mechanical repairs. 20+ years serving Gauteng.
                 </p>
                 <div className="hero-buttons">
                     <button 
                         className="btn btn-primary"
                         onClick={navigateToProducts}
+                        aria-label="Browse our Mercedes-Benz parts inventory"
                     >
                         Browse Parts
                     </button>
                     <button 
                         className="btn btn-secondary"
                         onClick={() => window.open('https://wa.me/message/HBNN47EW2DUXP1', '_blank')}
+                        aria-label="Get a quote via WhatsApp"
                     >
                         Get a Quote
                     </button>

@@ -17,18 +17,13 @@
 }
 
 .navbar-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 10px 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* Navigation Left Side - Logo only */
-.nav-left {
-    display: flex;
-    align-items: center;
+    gap: 2rem;
 }
 
 /* Navigation Right Side - Menu */
@@ -48,23 +43,34 @@
 .logo-image {
     display: flex;
     align-items: center;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.logo-image:hover {
+    background: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
 }
 
 .logo-image img {
-    height: 72px;
+    height: 60px;
     width: auto;
-    max-width: 260px;
+    max-width: 200px;
     object-fit: contain;
     transition: var(--transition);
     cursor: pointer;
 }
 
-.navbar.scrolled .logo-image img {
-    height: 65px;
+.navbar.scrolled .logo-image {
+    padding: 6px 12px;
 }
 
-.logo-image img:hover {
-    transform: scale(1.02);
+.navbar.scrolled .logo-image img {
+    height: 50px;
 }
 
 /* Navigation Menu - Now on right side */

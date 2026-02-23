@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "sitemap": "echo 'Sitemap available at /sitemap.xml'",
+    "seo-check": "echo 'SEO Guide: See SEO-GUIDE.md for complete checklist'"
   },
   "keywords": [
     "motor-parts",

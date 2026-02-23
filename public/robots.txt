@@ -1,0 +1,26 @@
+# robots.txt for TLS Commercial Parts
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow crawling of unnecessary resources
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /src/
+
+# Sitemap location
+Sitemap: https://tls-commercial-parts.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
