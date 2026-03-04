@@ -7,13 +7,13 @@
     top: 0;
     z-index: 1000;
     transition: var(--transition);
-    padding: 0.4rem 0;
+    padding: 0.2rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar.scrolled {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    padding: 0.3rem 0;
+    padding: 0.1rem 0;
 }
 
 .navbar-container {
@@ -43,26 +43,27 @@
 .logo-image {
     display: flex;
     align-items: center;
-    background: white;
+    background: transparent;
     padding: 10px 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
     transition: var(--transition);
 }
 
 .logo-image:hover {
-    background: white;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background: transparent;
+    box-shadow: none;
     transform: translateY(-2px);
 }
 
 .logo-image img {
-    height: 60px;
+    height: 100px;
     width: auto;
-    max-width: 200px;
+    max-width: 300px;
     object-fit: contain;
     transition: var(--transition);
     cursor: pointer;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .navbar.scrolled .logo-image {
@@ -70,7 +71,7 @@
 }
 
 .navbar.scrolled .logo-image img {
-    height: 50px;
+    height: 80px;
 }
 
 /* Navigation Menu - Now on right side */
