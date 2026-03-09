@@ -1,6 +1,6 @@
 # Images Folder
 
-This folder contains all images for the TLS Commercial Parts website.
+This folder contains all images for the TSL Commercial Parts website.
 
 ## Required Images:
 

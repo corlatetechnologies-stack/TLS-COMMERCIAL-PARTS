@@ -1,4 +1,4 @@
-# TLS Commercial Parts - SEO Implementation Guide
+# TSL Commercial Parts - SEO Implementation Guide
 
 ## ✅ Completed SEO Improvements
 
@@ -154,7 +154,7 @@ site:tls-commercial-parts.com
 
 ### Check specific keywords:
 ```
-"TLS Commercial Parts" Kempton Park
+"TSL Commercial Parts" Kempton Park
 "Mercedes-Benz parts" Kempton Park
 ```
 

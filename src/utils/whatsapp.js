@@ -1,6 +1,6 @@
 // WhatsApp integration utility
-const WHATSAPP_NUMBER = '27630206053'; // TLS Commercial Parts WhatsApp number
-const WHATSAPP_LINK = 'https://wa.me/message/HBNN47EW2DUXP1'; // TLS Commercial Parts custom WhatsApp link
+const WHATSAPP_NUMBER = '27630206053'; // TSL Commercial Parts WhatsApp number
+const WHATSAPP_LINK = 'https://wa.me/message/HBNN47EW2DUXP1'; // TSL Commercial Parts custom WhatsApp link
 
 export const sendWhatsAppOrder = (product) => {
     const message = `Hi! I'm interested in the following product:\n\n*Product:* ${product.name}\n*Category:* ${product.category}\n\nPlease confirm availability and provide pricing details.`;

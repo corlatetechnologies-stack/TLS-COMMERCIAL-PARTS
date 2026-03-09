@@ -1,7 +1,7 @@
 {
   "name": "tls-commercial-parts",
   "version": "1.0.0",
-  "description": "A professional website for TLS Commercial Parts - Motor parts dealer and Mercedes-Benz specialists",
+  "description": "A professional website for TSL Commercial Parts - Motor parts dealer and Mercedes-Benz specialists",
   "main": "index.js",
   "type": "module",
   "scripts": {

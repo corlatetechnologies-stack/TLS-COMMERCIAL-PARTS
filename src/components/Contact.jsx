@@ -157,7 +157,7 @@ const Contact = () => {
                                 allowFullScreen="" 
                                 loading="lazy" 
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="TLS Commercial Parts Location - 3 Isando Road, Kempton Park"
+                                title="TSL Commercial Parts Location - 3 Isando Road, Kempton Park"
                             ></iframe>
                         </div>
                     </div>

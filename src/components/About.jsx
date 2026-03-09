@@ -20,7 +20,7 @@ const About = () => {
                         <div className="journey-image">
                             <img 
                                 src="/images/loustruck.png" 
-                                alt="Professional mechanic at TLS Commercial Parts working in our fully equipped workshop" 
+                                alt="Professional mechanic at TSL Commercial Parts working in our fully equipped workshop" 
                             />
                         </div>
                         

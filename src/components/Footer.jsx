@@ -10,9 +10,9 @@ const Footer = () => {
                     {/* Company Info */}
                     <div className="footer-section company-section">
                         <div className="company-info">
-                            <h3 className="footer-title">TLS Commercial Parts</h3>
+                            <h3 className="footer-title">TSL Commercial Parts</h3>
                             <div className="company-description-wrapper">
-                                <img src="/images/tsl.png" alt="TLS Commercial Parts Logo" className="company-logo" />
+                                <img src="/images/tsl.png" alt="TSL Commercial Parts Logo" className="company-logo" />
                                 <p className="company-description">
                                     Specializing in Mercedes Benz repairs and quality 
                                     second-hand parts.
@@ -88,7 +88,7 @@ const Footer = () => {
 
                 {/* Copyright */}
                 <div className="footer-bottom">
-                    <p>&copy; 2025 TLS Commercial Parts. All rights reserved.</p>
+                    <p>&copy; 2025 TSL Commercial Parts. All rights reserved.</p>
                     <p className="developer-credit">
                         Website by <a href="https://corlate.co.za/" target="_blank" rel="noopener noreferrer">Corlate Technologies</a>
                     </p>
