@@ -12,7 +12,7 @@ const Services = () => {
                 <div className="section-header">
                     <h2 className="section-title">Our Core Services</h2>
                     <p className="section-description">
-                        At TSL Commercial Parts, we specialize in quality motor parts and spares, plus expert Mercedes-Benz car and truck repair services. We help you save money while getting reliable parts and professional repairs.
+                        At TSL Commercial Parts, we specialize in quality motor parts, truck parts, and vehicle spares for all makes and models, with expert focus on Mercedes-Benz. We help you save money while getting reliable second-hand motor parts and professional repair services.
                     </p>
                 </div>
 
@@ -21,14 +21,14 @@ const Services = () => {
                     {/* Second-Hand Motor Parts */}
                     <div className="service-card">
                         <div className="service-image">
-                            <img src="/images/car parts.jpeg" alt="Second-Hand Motor Parts" />
+                            <img src="/images/car parts.jpeg" alt="Quality second-hand motor parts, truck parts and vehicle spares at TSL Commercial Parts Kempton Park" />
                         </div>
                         <div className="service-content">
                             <h3 className="service-title">Second-Hand Motor Parts & Spares</h3>
                             <p className="service-description">
-                                We stock a wide selection of quality second-hand motor parts and spares 
-                                for various vehicle makes and models. All parts are carefully checked 
-                                to ensure they work properly, giving you reliable parts at affordable prices.
+                                We stock a wide selection of quality second-hand motor parts, truck parts, and vehicle spares 
+                                for various makes and models. All motor parts are carefully inspected and tested 
+                                to ensure reliability, giving you quality parts at affordable prices.
                             </p>
                             <button className="service-btn" onClick={() => navigate('/products')}>View Parts Inventory</button>
                         </div>
@@ -37,7 +37,7 @@ const Services = () => {
                     {/* Mercedes Benz Repairs */}
                     <div className="service-card">
                         <div className="service-image">
-                            <img src="/images/m-speciality.png" alt="Specialized Mercedes Benz Repairs" />
+                            <img src="/images/m-speciality.png" alt="Mercedes-Benz motor parts specialist and expert truck repair services Kempton Park" />
                         </div>
                         <div className="service-content">
                             <h3 className="service-title">Specialized Mercedes Benz Repairs</h3>

@@ -12,8 +12,7 @@ const WhyChooseUs = () => {
                 <div className="section-header">
                     <h2 className="section-title">Why Choose TSL Commercial Parts?</h2>
                     <p className="section-description">
-                        We are dedicated to providing exceptional service and value, building trust with every repair and 
-                        part we supply.
+                        Kempton Park's leading motor parts dealer, dedicated to providing exceptional service and value with every truck part, vehicle spare, and repair we supply.
                     </p>
                 </div>
 
